@@ -15,13 +15,13 @@ This system can be installed from [UltraLisp](https://ultralisp.org/) like this:
 ## Usage
 
 ```common-lisp
-(async-defun foo ()
+(defun-async foo ()
   ...)
 
 (let ((bar (await (foo))))
   ...)
 
-(async-lambda () (await (foo)))
+(lambda-async () (await (foo)))
 ```
 
 ## Credits
