@@ -4,7 +4,7 @@
 
 (ps::defprinter ps-js::await (x)
   (ps::psw (string-downcase "await "))
-  (ps::print-op-argument 'ps-js::await x))
+  (ps::ps-print x))
 
 (ps::define-trivial-special-ops
     await ps-js::await)
